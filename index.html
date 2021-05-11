@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube</title>
+    <title>Youtube - project</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--Шапка сайта-->
     <header class="header">
       <button class="menu-button">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
       </button>
-      <img src="/images/logo.svg" alt="Youtube Logo" class="logo" />
+      <img src="images/logo.svg" alt="Youtube Logo" class="logo" />
       <div class="input-group">
         <input type="search" name="search" class="input-search" placeholder="Search" />
         <button type="submit" class="button-search">
@@ -43,13 +45,17 @@
           </svg>
         </a>
       </div>
+      <!-- /.user -->
       <a href="#" class="user">
-        <img src="images/vue.png" alt="Горбунов Иван" class="user-avatar" />
+        <img src="images/avatar.png" alt="Иван Горбунов" class="user-avatar" />
       </a>
       <!-- /.user -->
     </header>
+    <!--Шапка сайта-->
+
     <div class="container">
       <aside class="sidebar">
+        <!--Навигация-->
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-item">
@@ -113,10 +119,10 @@
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <svg class="icon icon-liked-videos" width="20" height="19">
-                  <use xlink:href="images/icons.svg#liked-videos"></use>
+                <svg class="icon icon-liked" width="20" height="19">
+                  <use xlink:href="images/icons.svg#liked"></use>
                 </svg>
-                <span class="nav-text">Liked-videos</span>
+                <span class="nav-text">Liked video</span>
               </a>
             </li>
             <li class="nav-item">
@@ -140,62 +146,116 @@
                 <svg class="icon icon-show-more" width="20" height="19">
                   <use xlink:href="images/icons.svg#show-more"></use>
                 </svg>
-                <span class="nav-text">Show more</span>
+                <span class="nav-text">Show-more</span>
               </a>
             </li>
           </ul>
         </nav>
+        <!--Навигация-->
 
+        <!--Подписки-->
         <h2 class="nav-title">Subscriptions</h2>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Gussie Singleton" class="nav-image" />
+              <img src="images/avatar.png" alt="Gussie Singleton" class="nav-image" />
               <span class="nav-text">Gussie Singleton</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Nora Francis" class="nav-image" />
+              <img src="images/avatar.png" alt="Nora Francis" class="nav-image" />
               <span class="nav-text">Nora Francis</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Belle Briggs" class="nav-image" />
+              <img src="images/avatar.png" alt="Belle Briggs" class="nav-image" />
               <span class="nav-text">Belle Briggs</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Eunice Cortez" class="nav-image" />
+              <img src="images/avatar.png" alt="Eunice Cortez" class="nav-image" />
               <span class="nav-text">Eunice Cortez</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Emma Hanson" class="nav-image" />
+              <img src="images/avatar.png" alt="Emma Hanson" class="nav-image" />
               <span class="nav-text">Emma Hanson</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/vue.png" alt="Leah Berry" class="nav-image" />
+              <img src="images/avatar.png" alt="Leah Berry" class="nav-image" />
               <span class="nav-text">Leah Berry</span>
             </a>
           </li>
         </ul>
+        <!--Подписки-->
 
+        <!--Настройки-->
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <img src="images/settings.svg" alt="Settings" class="nav-image" />
+              <svg class="icon icon-settings" width="20" height="19">
+                <use xlink:href="images/icons.svg#settings"></use>
+              </svg>
               <span class="nav-text">Settings</span>
             </a>
           </li>
         </ul>
+        <!--Настройки-->
       </aside>
+
+      <main class="content">
+        <div class="channel">
+          <a href="#" class="channel-title">
+            <img src="images/avatar.png" alt="Belle" class="channel-avatar" />
+            <span class="channel-text">Dollie Blair</span>
+          </a>
+          <!-- Slider main container -->
+          <div class="swiper-container channel-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img src="images/1.png" alt="" class="thumbnail" />
+                    <span class="video-duraction">4:15</span>
+                  </div>
+                  <!--/.video-thumb-->
+                  <h3 class="video-title">A Brief History Of Creation</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">80k views</span>
+                      <span class="video-date">3 days ago</span>
+                    </span>
+                    <span class="video-channel">Dollie Blair</span>
+                  </div>
+                </div>
+              </div>
+              <!--/.swipper-slide-->
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!--/.swipper-container-->
+        </div>
+      </main>
     </div>
-    <!-- /.container -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
+<!--Swipper JS [29:56]-->

@@ -1,14 +1,11 @@
 * {
   box-sizing: border-box;
-  outline: none;
 }
-
 body {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -17,8 +14,12 @@ body {
   padding-left: 32px;
   padding-right: 70px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 }
-
 .menu-button {
   padding: 0;
   display: flex;
@@ -31,7 +32,6 @@ body {
   margin-right: 28px;
   cursor: pointer;
 }
-
 .menu-line {
   display: block;
   background-color: #1f2022;
@@ -39,11 +39,9 @@ body {
   height: 3px;
   border-radius: 20px;
 }
-
 .logo {
   margin-right: 59px;
 }
-
 .input-group {
   background: #ebebeb;
   border-radius: 22px;
@@ -54,9 +52,8 @@ body {
   max-width: 830px;
   width: 50%;
 }
-
 .input-search {
-  background: transparent;
+  background-color: transparent;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -64,86 +61,84 @@ body {
   padding-right: 23px;
   width: 100%;
 }
-
 .button-search {
   padding: 0;
   width: 19px;
   height: 19px;
   border: none;
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
 }
-
 .icon-search {
-  fill: #000;
+  fill: #000000;
 }
-
 .icons {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-
 .icons-link {
   text-decoration: none;
   opacity: 0.24;
 }
-
 .icons-link:hover {
   opacity: 0.7;
 }
-
 .icons-link:not(:last-child) {
   margin-right: 50px;
 }
 .user {
   margin-left: 45px;
 }
-
 .user-avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-
 .sidebar {
+  position: fixed;
+  width: 12%;
+  left: 0;
+  top: 114px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
   padding-left: 32px;
+  background: #fff;
 }
-
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 85px;
+  padding-left: 13%;
+  padding-top: 30px;
+}
 .nav-menu {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 60px;
-  padding-left: 0;
-  list-style-type: none;
+  padding-left: 0px;
+  list-style: none;
 }
-
 .nav-item {
   margin-bottom: 28px;
 }
-
 .nav-link {
-  color: #898989;
-  text-decoration: none;
   display: flex;
   align-items: center;
+  color: #898989;
+  text-decoration: none;
 }
-
 .nav-link:hover {
   color: #ff0000;
 }
-
-.nav-item .icon {
-  fill: #898989;
-}
-
 .nav-link:hover .icon {
   fill: #ff0000;
 }
-
+.nav-item .icon {
+  fill: #898989;
+}
 .nav-text {
   margin-left: 13px;
 }
-
 .nav-image {
   width: 26px;
   height: 26px;
@@ -155,4 +150,62 @@ body {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+}
+.channel-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+}
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel-text {
+  margin-left: 20px;
+}
+.video-card {
+  width: 250px;
+}
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+.video-duraction {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgb(0, 0, 0, 0.3);
+  border-radius: 12px;
+  line-height: 18px;
+  color: #fff;
+  padding: 3px 9px;
+}
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.video-info {
+  display: flex;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+  align-items: center;
+  justify-content: space-between;
 }
