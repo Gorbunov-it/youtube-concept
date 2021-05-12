@@ -19,6 +19,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 .menu-button {
   padding: 0;
@@ -107,7 +108,6 @@ body {
 }
 .content {
   width: 100%;
-  height: 400px;
   margin-top: 85px;
   padding-left: 13%;
   padding-top: 30px;
@@ -151,6 +151,10 @@ body {
   line-height: 23px;
   margin-bottom: 30px;
 }
+.channel {
+  position: relative;
+  margin-bottom: 49px;
+}
 .channel-title {
   display: flex;
   align-items: center;
@@ -159,6 +163,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 33px;
+  margin-bottom: 30px;
 }
 .channel-avatar {
   width: 50px;
@@ -208,4 +213,108 @@ body {
   color: #c2c2c2;
   align-items: center;
   justify-content: space-between;
+}
+.video-counter {
+  display: flex;
+}
+.video-views {
+  margin-right: 5px;
+}
+.video-views::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.channel-button-prev,
+.channel-button-next {
+  cursor: pointer;
+}
+.slider-buttons {
+  position: absolute;
+  right: 8%;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+.recommended {
+  position: relative;
+  margin-bottom: 49px;
+}
+.recommended-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+.recommended-video-card {
+  width: 515px;
+  margin-right: 20px;
+}
+.recommended-video-thumb {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.recommended-thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.foodDrink {
+  position: relative;
+  margin-bottom: 49px;
+}
+.foodDrink-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+.foodDrink-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.foodDrink-text {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.recommended-channel-text {
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.sub-button {
+  position: absolute;
+  right: 15%;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: red;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.foodDrink-button-prev,
+.foodDrink-button-next {
+  cursor: pointer;
 }
